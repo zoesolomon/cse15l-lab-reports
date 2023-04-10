@@ -22,6 +22,11 @@ I. Navigate to https://code.visualstudio.com/ and follow the instructions to dow
 ![Image](VSCODE_download.jpg)
 
 II. Once fully installed, your window should look something like this:
+![Image](VSCODE.jpg)
 
-III. 
+Step 2: Remotely Connecting
+
+I. Open terminal in VScode
+
+II. Use the command format `$ ssh username@host` in this case, it would be `$ ssh cs15lsp23[your two letter code]@ieng6.ucsd.edu` 
 
