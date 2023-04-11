@@ -1,4 +1,4 @@
-Lab1: Markdown, URLs, Paths, and the Filesystem
+## Lab1: Markdown, URLs, Paths, and the Filesystem
 
 
 You’ll submit a lab report by writing a blog post about remote access, like we just described using Github Pages. The lab report is due Monday, April 10 by 10pm. See the FAQ below for common questions, including how to add images and what to submit to Gradescope.
@@ -14,9 +14,9 @@ You should complete the writing on your own. Feel free to ask anyone (staff or o
 
 You will upload your submission by publishing the page on Github Pages, then printing the page to PDF and uploading to the Lab Report 1 assignment on Gradescope.
 
-Step 1: Installing VSCODE
+### Step 1: Installing VSCODE
 
-If your computer already has VScode installed, proceed to step 2.
+If your computer already has VScode installed, proceed to [Step 2](https://github.com/zoesolomon/cse15l-lab-reports/edit/main/lab1.md#step-2-remotely-connecting).
 
 I. Navigate to https://code.visualstudio.com/ and follow the instructions to download and install. (More information on starting VScode for Mac OSX here: https://code.visualstudio.com/docs/?dv=osx)
 ![Image](VSCODE_download.jpg)
@@ -24,9 +24,16 @@ I. Navigate to https://code.visualstudio.com/ and follow the instructions to dow
 II. Once fully installed, your window should look something like this:
 ![Image](VSCODE.jpg)
 
-Step 2: Remotely Connecting
+### Step 2: Remotely Connecting
 
 I. Open terminal in VScode
 
 II. Use the command format `$ ssh username@host` in this case, it would be `$ ssh cs15lsp23[your two letter code]@ieng6.ucsd.edu` 
 
+III. Input password when prompted. Your window should look something like this:
+![Image](ssh.jpg)
+
+### Step 3: Trying Commands
+
+I. 
+![Image](commands.jpg)
