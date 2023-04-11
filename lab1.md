@@ -16,7 +16,7 @@ You will upload your submission by publishing the page on Github Pages, then pri
 
 ### Step 1: Installing VSCODE
 
-If your computer already has VScode installed, proceed to [Step 2](https://github.com/zoesolomon/cse15l-lab-reports/edit/main/lab1.md#step-2-remotely-connecting).
+If your computer already has VScode installed, proceed to [Step 2](https://github.com/zoesolomon/cse15l-lab-reports/blob/main/lab1.md#step-2-remotely-connecting)).
 
 I. Navigate to https://code.visualstudio.com/ and follow the instructions to download and install. (More information on starting VScode for Mac OSX here: https://code.visualstudio.com/docs/?dv=osx)
 ![Image](VSCODE_download.jpg)
