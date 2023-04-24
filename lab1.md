@@ -54,4 +54,4 @@ II. Here is an example of what some of these commands could look like:
 
 ![Image](commands.jpg)
 
-As listed in the above commands, this screenshot shows changing directories with cd, moving files from one directory to another (mv), listing the contents of a directory (ls), printing the full path of the current directory (pwd), and listing all files (including hidden) in the directory in long format from most to least recently modified (ls -lat).
+As listed in the above commands, this screenshot shows changing directories with cd, making a directory with mkdir, viewing a file using vi, moving files from one directory to another (mv), listing the contents of a directory (ls), printing the full path of the current directory (pwd), and listing all files (including hidden) in the directory in long format from most to least recently modified (ls -lat).
