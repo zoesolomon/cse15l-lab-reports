@@ -6,7 +6,7 @@ This report gives instructions on remote access and the filesystem of a terminal
 
 If your computer already has VScode installed, proceed to [Step 2](https://github.com/zoesolomon/cse15l-lab-reports/blob/main/lab1.md#step-2-remotely-connecting)).
 
-I. Navigate to https://code.visualstudio.com/ and follow the instructions to download and install. (More information on starting VScode for Mac OSX here: https://code.visualstudio.com/docs/?dv=osx)
+I. Navigate to the [VSCODE website](https://code.visualstudio.com/) and follow the instructions to download and install. (More information on starting VScode for Mac OSX [here](https://code.visualstudio.com/docs/?dv=osx))
 
 ![Image](VSCODE_download.jpg)
 
@@ -32,10 +32,26 @@ cd ~
 cd
 ls -lat
 ls -a
-ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
 cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 ```
+
+For reference, in order, these commands perform these functions:
+
+>change directory home
+>
+>change directory home
+>
+>lists all files (including hidden) in the directory in long format from most to least recently modified
+>
+>lists all files (including hidden) in the directory
+>
+>copies the file to your home directory
+>
+>shows the content of the file in the terminal
+
 II. Here is an example of what some of these commands could look like:
 
 ![Image](commands.jpg)
+
+As listed in the above commands, this screenshot shows changing directories with cd, moving files from one directory to another (mv), listing the contents of a directory (ls), printing the full path of the current directory (pwd), and listing all files (including hidden) in the directory in long format from most to least recently modified (ls -lat).
