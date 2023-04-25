@@ -25,6 +25,65 @@ The input to start the server (in the main method) is the port number, which is 
 
 ## PART 2: Debugging
 
+One method in the ArrayExamples class that was buggy was the reversed method:
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+A test that reveals a failure in this method can be seen below:
+
+```
+@Test
+  public void testReversed2() {
+    int[] input = {3, 5, 7};
+    assertArrayEquals(new int[]{7, 5, 3}, ArrayExamples.reversed(input));
+  }
+```
+A test that works despite the bug present in the code can be seen below:
+
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+The screenshyhots below show these tests running on JUnit, and as predicted testReversed2 produced an error when testReversed didn't.
+
+![Image](test1.png)
+
+![Image](test2.png)
+
+![Image](test3.png)
+
+The bug in the code can be seen below, as well as the fix:
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+ }
+```
+
+To fix this bug, switch arr and newArray in the for loop, and return newArray at the end of the method. This is because when you first instantiate newArray it is empty, and setting arr[i] equal to any value in newArray is going to be null. Thus, returning it only gives null. By switching newArray and arr in the for loop, the code is actually assigning the correct values for each index, and then returning the correct array at the end.
 
 
 ## PART 3: Discovery
